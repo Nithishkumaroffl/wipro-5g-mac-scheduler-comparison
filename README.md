@@ -31,7 +31,9 @@ This project compares Round-Robin (RR), Proportional Fair (PF), and Maximum Carr
 wipro-5g-mac-scheduler-comparison/
 ├── src/
 │   └── mac_scheduler_simulator.py
-├── results/                         # Generated at runtime
+├── notebooks/                       # Jupyter/Google Colab notebook
+├── results/                         # Final graphs for submission
+├── report/                          # Final PDF report
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -77,7 +79,7 @@ python src/mac_scheduler_simulator.py --users 10 --slots 1000
 
 ## Output
 
-The program creates the following files in `results/`:
+The simulator can create the following files in `results/`:
 
 - `scheduler_metrics.csv` — metric values for all schedulers.
 - `scheduler_comparison.png` — side-by-side comparison of throughput, fairness, and cell-edge throughput.
